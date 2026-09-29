@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import type { ReactNode } from 'react';
 import Script from 'next/script';
+import CallWidget from '@/components/base/CallWidget';
 import '@/index.css';
 
 const SITE = 'https://bwmetroproperties.com';
@@ -109,6 +110,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         {children}
+
+        {/* Floating call / text button, on every page including the ones that
+            render their own header and footer. It is excluded from /dashboard
+            below, which is a private tool rather than somewhere a visitor would
+            ring from. */}
+        <CallWidget />
+
         {/* Google Analytics. Rendered only when the measurement ID is present,
             so a local or preview build collects nothing and no empty gtag stub
             ships to visitors. `afterInteractive` keeps it off the critical

@@ -758,6 +758,42 @@ button.rounded-full:active {
   background: #000;
 }
 
+/* ---------------------------------------------------------------- */
+/* Floating call button                                              */
+/* ---------------------------------------------------------------- */
+
+@keyframes bw-call-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.call-panel {
+  animation: bw-call-in 0.22s ease-out both;
+  transform-origin: bottom right;
+}
+
+/* The button is the only thing on the page that moves on its own, so it is the
+   first thing to stop when someone has asked for less motion. */
+@media (prefers-reduced-motion: reduce) {
+  .call-panel {
+    animation: none;
+  }
+
+  .call-fab {
+    transition: none;
+  }
+
+  .call-fab:hover {
+    transform: none;
+  }
+}
+
 /* Anchors scroll clear of the fixed top bar when a drawer link is used */
 section[id] {
   scroll-margin-top: 96px;
