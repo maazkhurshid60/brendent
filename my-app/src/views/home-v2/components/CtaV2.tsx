@@ -12,6 +12,8 @@ export default function CtaV2({ sectionIndex = '13' }: { sectionIndex?: string }
     <section id="contact" className="bg-background-100 px-5 py-14 md:px-10 md:py-20">
       <div className="relative mx-auto flex max-w-[1420px] flex-col items-center overflow-hidden rounded-[30px] px-6 py-24 text-center md:px-14 md:py-36">
         <img
+              loading="lazy"
+              decoding="async"
           src="https://assets.agentfire3.com/uploads/sites/2739/2026/03/Washington-DC-Area-guide-AUTOx1150.fit.jpg"
           alt="Washington DC at dusk — the market BW Metro Properties serves"
           className="absolute inset-0 h-full w-full object-cover object-top"

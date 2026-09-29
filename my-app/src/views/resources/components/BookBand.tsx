@@ -42,6 +42,8 @@ export default function BookBand({ id, eyebrow, titleLead, titleAccent, text, co
               <div className="res-book animate-float-slow relative w-[220px] max-w-full sm:w-[248px]">
                 <div className="relative overflow-hidden rounded-l-[4px] rounded-r-[10px] border border-background-50/15">
                   <img
+              loading="lazy"
+              decoding="async"
                     src={cover}
                     alt={`${bookTitle} guide cover`}
                     title={`${bookTitle} — BW Metro Properties`}

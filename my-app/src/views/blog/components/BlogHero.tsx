@@ -6,6 +6,9 @@ export default function BlogHero() {
   return (
     <section id="top" className="relative min-h-[86svh] w-full overflow-hidden bg-foreground-950">
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={blogHero.image}
         alt="The Washington DC metro skyline at dusk — the market BW Metro Properties covers in its blog"
         title="BW Metro Properties Blog — Our Market"

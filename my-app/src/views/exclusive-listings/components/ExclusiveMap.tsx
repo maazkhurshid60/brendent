@@ -81,7 +81,9 @@ export default function ExclusiveMap({ listings, activeId, onActiveChange }: Exc
       {active ? (
         <div className="absolute bottom-5 left-5 right-5 flex items-center gap-4 overflow-hidden rounded-2xl border border-background-300 bg-background-50/96 p-3 backdrop-blur md:right-auto md:w-[340px]">
           <div className="h-16 w-16 shrink-0 overflow-hidden rounded-xl">
-            <img src={active.image} alt={active.address} className="h-full w-full object-cover object-top" />
+            <img
+              loading="lazy"
+              decoding="async" src={active.image} alt={active.address} className="h-full w-full object-cover object-top" />
           </div>
           <div className="min-w-0">
             <p className="font-heading text-[19px] leading-none text-foreground-950">{formatMoney(active.price)}</p>

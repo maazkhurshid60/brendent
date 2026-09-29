@@ -35,6 +35,8 @@ export default function PlanSection() {
           <Reveal delay={120}>
             <div className="h-[420px] w-full overflow-hidden rounded-[30px] md:h-[620px]">
               <img
+              loading="lazy"
+              decoding="async"
                 src={planControl.image}
                 alt="A happy family at the front of their new DMV home"
                 title="Buying a home in the DMV with BW Metro Properties"

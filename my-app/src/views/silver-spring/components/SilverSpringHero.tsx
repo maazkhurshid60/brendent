@@ -6,6 +6,9 @@ export default function SilverSpringHero() {
   return (
     <section id="top" className="relative min-h-[94svh] w-full overflow-hidden bg-foreground-950">
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={silverSpringHero.image}
         alt="Downtown Silver Spring, Maryland and its tree-lined neighborhoods — the area guide market served by BW Metro Properties"
         title="Silver Spring, MD Area Guide — BW Metro Properties"

@@ -23,6 +23,8 @@ export default function AreaCard({ area }: AreaCardProps) {
     >
       <div className="relative h-[220px] overflow-hidden">
         <img
+              loading="lazy"
+              decoding="async"
           src={area.image}
           alt={`${area.name} area guide`}
           title={`${area.name} real estate area guide`}

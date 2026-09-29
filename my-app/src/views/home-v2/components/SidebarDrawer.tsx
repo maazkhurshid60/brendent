@@ -71,6 +71,8 @@ export default function SidebarDrawer({ open, onClose, linkBase = '' }: SidebarD
             <>
               <div className="drawer-item" style={{ animationDelay: '40ms' }}>
                 <img
+              loading="lazy"
+              decoding="async"
                   src={brand.logo}
                   alt="BW Metro Properties logo"
                   className="h-8 w-auto brightness-0"

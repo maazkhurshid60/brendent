@@ -6,6 +6,9 @@ export default function RentalsHero() {
   return (
     <section id="top" className="relative min-h-[92svh] w-full overflow-hidden bg-foreground-950">
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={rentalsHero.image}
         alt="A modern DMV condo tower glowing at dusk — condos and rentals with BW Metro Properties"
         title="Condo and Rental Hub — BW Metro Properties"

@@ -34,6 +34,8 @@ export default function Neighborhoods() {
                 className="group relative block h-[240px] w-full overflow-hidden rounded-[22px] border border-background-200 bg-foreground-950"
               >
                 <img
+              loading="lazy"
+              decoding="async"
                   src={area.image}
                   alt={`${area.name} neighborhood in Washington, D.C.`}
                   title={`${area.name} Washington DC neighborhood`}

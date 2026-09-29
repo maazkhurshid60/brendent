@@ -92,6 +92,9 @@ export default function SiteNavbar({ linkBase = '', homeHref = '#top' }: SiteNav
 
   const logoImg = (
     <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
       src={brand.logo}
       alt="BW Metro Properties logo"
       className="h-9 w-auto md:h-10"

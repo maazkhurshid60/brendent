@@ -6,6 +6,9 @@ export default function CalcHero() {
   return (
     <section id="top" className="relative min-h-[80svh] w-full overflow-hidden bg-foreground-950">
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={affordabilityHero.image}
         alt="A warm modern home exterior at golden hour — estimating what you can afford in the DMV"
         title="Affordability Calculator — BW Metro Properties"

@@ -7,6 +7,8 @@ export default function HomeValueBand() {
     <section id="value" className="bg-background-100 px-5 py-6 md:px-10 md:py-8">
       <div className="relative mx-auto flex max-w-[1420px] flex-col items-center overflow-hidden rounded-[30px] px-6 py-24 text-center md:px-14 md:py-32">
         <img
+              loading="lazy"
+              decoding="async"
           src={homeValue.image}
           alt="The DMV region at dusk — home values across the market served by BW Metro Properties"
           title="Know your DMV home's value"

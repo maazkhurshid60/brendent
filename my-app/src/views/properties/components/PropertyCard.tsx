@@ -24,6 +24,8 @@ export default function PropertyCard({ listing, onHover, highlighted = false }: 
     >
       <div className="relative h-[200px] w-full shrink-0 overflow-hidden sm:h-auto sm:w-[184px]">
         <img
+              loading="lazy"
+              decoding="async"
           src={listing.image}
           alt={`${listing.address}, ${listing.city} ${listing.state} ${listing.zip} — property listing`}
           title={`${listing.address} ${listing.city} ${listing.state} property`}

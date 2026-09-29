@@ -21,6 +21,8 @@ export default function ContactInfoCard() {
 
       <div className="relative">
         <img
+              loading="lazy"
+              decoding="async"
           src={brand.logo}
           alt="BW Metro Properties logo"
           className="h-11 w-auto brightness-0 invert md:h-12"

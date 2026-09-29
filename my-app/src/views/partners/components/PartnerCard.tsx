@@ -21,6 +21,8 @@ export default function PartnerCard({ partner }: PartnerCardProps) {
 
       <div className="relative h-[240px] w-full overflow-hidden bg-background-100 md:h-[300px]">
         <img
+              loading="lazy"
+              decoding="async"
           src={partner.image}
           alt={`${partner.name} — trusted BW Metro Properties partner`}
           title={`${partner.category} — BW Metro Properties Partners`}

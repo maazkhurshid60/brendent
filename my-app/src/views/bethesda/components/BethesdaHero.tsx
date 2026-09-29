@@ -6,6 +6,9 @@ export default function BethesdaHero() {
   return (
     <section id="top" className="relative min-h-[94svh] w-full overflow-hidden bg-foreground-950">
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={bethesdaHero.image}
         alt="Bethesda Row in Bethesda, Maryland and its tree-lined neighborhoods — the area guide market served by BW Metro Properties"
         title="Bethesda, MD Area Guide — BW Metro Properties"

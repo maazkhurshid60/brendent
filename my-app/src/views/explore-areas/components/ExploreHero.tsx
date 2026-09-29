@@ -6,6 +6,9 @@ export default function ExploreHero() {
   return (
     <section id="top" className="relative min-h-[92svh] w-full overflow-hidden bg-foreground-950">
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={exploreHero.image}
         alt="The Washington, DC region skyline at dusk — neighborhoods served by BW Metro Properties"
         title="Explore Areas — BW Metro Properties"

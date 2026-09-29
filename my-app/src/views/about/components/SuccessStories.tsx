@@ -48,6 +48,8 @@ export default function SuccessStories() {
                 <figcaption className="mt-8 flex items-center gap-4 border-t border-background-200 pt-7">
                   <span className="h-12 w-12 shrink-0 overflow-hidden rounded-full">
                     <img
+              loading="lazy"
+              decoding="async"
                       src={review.avatar}
                       alt={`${review.name}, BW Metro Properties client`}
                       className="h-full w-full object-cover object-top"
@@ -105,6 +107,8 @@ export default function SuccessStories() {
             <div className="relative">
               <div className="h-[440px] w-full overflow-hidden rounded-[30px] md:h-[720px]">
                 <img
+              loading="lazy"
+              decoding="async"
                   src={successStories.image}
                   alt="A happy BW Metro Properties client outside their new DMV home"
                   title="BW Metro Properties client success stories"

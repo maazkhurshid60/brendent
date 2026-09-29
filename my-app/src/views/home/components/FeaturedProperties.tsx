@@ -42,6 +42,8 @@ export default function FeaturedProperties() {
               <article className="group flex h-full flex-col overflow-hidden rounded-[28px] border border-background-200 bg-background-50 transition-colors duration-300 hover:border-primary-300">
                 <div className="relative h-[380px] w-full overflow-hidden md:h-[460px]">
                   <img
+              loading="lazy"
+              decoding="async"
                     src={property.image}
                     alt={`${property.address}, ${property.city} — home for sale in the DMV`}
                     title={`${property.address} ${property.city} home for sale`}

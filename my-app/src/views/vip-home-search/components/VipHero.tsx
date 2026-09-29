@@ -12,6 +12,9 @@ export default function VipHero() {
         {/* Left — VIP introduction + private-search timeline */}
         <div className="relative flex flex-col justify-center overflow-hidden px-6 py-24 md:px-14 md:py-28 lg:pr-16">
           <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
             src="https://assets.agentfire3.com/uploads/sites/2739/2026/04/IMG-1568.jpg"
             alt=""
             aria-hidden="true"
@@ -53,6 +56,9 @@ export default function VipHero() {
         {/* Right — describe your dream home / AI search */}
         <div className="relative flex flex-col justify-center overflow-hidden px-6 py-24 md:px-14 md:py-28">
           <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
             src="https://assets.agentfire3.com/uploads/sites/2739/2026/03/Alexandria-VA-Area-Guide-AUTOx1150.fit.jpeg"
             alt="Tree-lined residential street in Alexandria, Virginia — the kind of neighborhood BW Metro Properties buyers search"
             className="absolute inset-0 h-full w-full object-cover object-top"

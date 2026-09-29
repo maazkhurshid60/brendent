@@ -21,6 +21,8 @@ export default function CalcRegions() {
             <div className="mt-9 overflow-hidden rounded-[26px] border border-background-300">
               <div className="h-[240px] w-full overflow-hidden md:h-[300px]">
                 <img
+              loading="lazy"
+              decoding="async"
                   src={affordabilityHero.image}
                   alt="A DMV neighborhood at golden hour — where property taxes shape affordability"
                   title="DMV property tax regions — Affordability Calculator"

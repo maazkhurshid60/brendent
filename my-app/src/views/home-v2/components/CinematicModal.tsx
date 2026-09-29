@@ -93,7 +93,9 @@ export default function CinematicModal({ open, onClose }: CinematicModalProps) {
                 frameIndex === index ? 'opacity-100' : 'opacity-0'
               }`}
             >
-              <img src={frame.src} alt={frame.alt} className="h-full w-full object-cover object-top" />
+              <img
+              loading="lazy"
+              decoding="async" src={frame.src} alt={frame.alt} className="h-full w-full object-cover object-top" />
             </div>
           ))}
           <div

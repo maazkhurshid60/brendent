@@ -33,6 +33,8 @@ export default function MeetBrandon() {
             <div className="relative">
               <div className="h-[480px] w-full overflow-hidden rounded-[30px] md:h-[760px]">
                 <img
+              loading="lazy"
+              decoding="async"
                   src={aboutBio.portrait}
                   alt="Brandon Wilson, DMV realtor with BW Metro Properties"
                   title="Brandon Wilson — BW Metro Properties"

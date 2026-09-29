@@ -19,6 +19,8 @@ export default function LookingToBand() {
                 className="group relative flex h-[420px] flex-col justify-between overflow-hidden rounded-[26px] p-7 md:h-[500px]"
               >
                 <img
+              loading="lazy"
+              decoding="async"
                   src={item.image}
                   alt={`${item.title} with BW Metro Properties across the DMV`}
                   className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"

@@ -6,6 +6,8 @@ export default function CtaSection() {
     <section id="contact" className="px-3 pb-3 md:px-5">
       <div className="relative mx-auto flex max-w-[1520px] flex-col items-center overflow-hidden rounded-[24px] px-6 py-24 text-center md:rounded-[36px] md:px-14 md:py-32">
         <img
+              loading="lazy"
+              decoding="async"
           src="https://assets.agentfire3.com/uploads/sites/2739/2026/03/Washington-DC-Area-guide-AUTOx1150.fit.jpg"
           alt="Washington DC at dusk — the market BW Metro Properties serves"
           className="absolute inset-0 h-full w-full object-cover object-top"

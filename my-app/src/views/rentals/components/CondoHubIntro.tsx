@@ -27,6 +27,8 @@ export default function CondoHubIntro() {
           <Reveal delay={120}>
             <div className="h-[440px] w-full overflow-hidden rounded-[30px] md:h-[640px]">
               <img
+              loading="lazy"
+              decoding="async"
                 src={condoHubIntro.image}
                 alt="A bright modern condo living room with city views — the DMV Condo Hub"
                 title="DMV Condo Hub — condos and rentals across DC, Maryland and Virginia"

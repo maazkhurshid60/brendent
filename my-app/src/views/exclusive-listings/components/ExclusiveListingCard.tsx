@@ -21,6 +21,8 @@ export default function ExclusiveListingCard({ listing, onHover, highlighted = f
     >
       <div className="relative h-[240px] w-full overflow-hidden md:h-[260px]">
         <img
+              loading="lazy"
+              decoding="async"
           src={listing.image}
           alt={`${listing.address}, ${listing.city} ${listing.state} — exclusive listing`}
           title={`${listing.address} ${listing.city} exclusive listing`}

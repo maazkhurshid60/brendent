@@ -27,6 +27,8 @@ export default function AboutServices() {
                 className="group relative flex h-[440px] flex-col justify-end overflow-hidden rounded-[26px] p-8 md:h-[520px]"
               >
                 <img
+              loading="lazy"
+              decoding="async"
                   src={service.image}
                   alt={`${service.title} — BW Metro Properties across the DMV`}
                   title={`${service.title} with BW Metro Properties`}

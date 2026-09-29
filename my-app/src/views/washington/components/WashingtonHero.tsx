@@ -6,6 +6,9 @@ export default function WashingtonHero() {
   return (
     <section id="top" className="relative min-h-[94svh] w-full overflow-hidden bg-foreground-950">
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={washingtonHero.image}
         alt="The Washington DC skyline and monuments at dusk — the area guide market served by BW Metro Properties"
         title="Washington, D.C. Area Guide — BW Metro Properties"

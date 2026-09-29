@@ -89,6 +89,8 @@ export default function ValuationV2() {
 
           <div className="relative min-h-[340px] lg:min-h-full">
             <img
+              loading="lazy"
+              decoding="async"
               src="https://assets.agentfire3.com/uploads/sites/2739/2026/03/Arlington-VA-Area-Guide-AUTOx1150.fit.jpeg"
               alt="Arlington Virginia neighborhood — home values across the DMV"
               className="absolute inset-0 h-full w-full object-cover object-top"

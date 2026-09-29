@@ -41,6 +41,8 @@ export default function CashOfferIntro() {
 
           <div className="relative min-h-[340px] lg:min-h-full">
             <img
+              loading="lazy"
+              decoding="async"
               src="https://assets.agentfire3.com/uploads/sites/2739/2026/04/IMG-6235.jpeg"
               alt="A well-presented DMV home — sold for cash without repairs or staging"
               title="Sell your DMV home for cash without repairs or staging"

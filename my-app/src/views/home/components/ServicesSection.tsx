@@ -25,6 +25,8 @@ export default function ServicesSection() {
               >
                 <div className="relative h-[440px] w-full overflow-hidden md:h-[560px]">
                   <img
+              loading="lazy"
+              decoding="async"
                     src={card.image}
                     alt={`${card.title} — ${card.eyebrow} services across the DC Metro`}
                     className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"

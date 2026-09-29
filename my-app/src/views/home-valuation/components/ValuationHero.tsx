@@ -10,6 +10,9 @@ export default function ValuationHero() {
       className="relative flex min-h-[100svh] w-full flex-col overflow-hidden bg-foreground-950"
     >
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={valuationHero.image}
         alt="A bright, modern kitchen inside a well-presented DMV home"
         title="Find out how much your DMV home is worth"
@@ -42,6 +45,9 @@ export default function ValuationHero() {
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <div className="flex flex-wrap items-center gap-x-5 gap-y-4">
             <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
               src={valuationHero.equalHousing}
               alt="Equal Housing Opportunity"
               title="Equal Housing Opportunity"

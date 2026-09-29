@@ -196,6 +196,8 @@ export default function MarketReport({ data = marketReport }: MarketReportProps)
           <Reveal delay={120}>
             <div className="relative mx-auto aspect-[3/4] w-full max-w-md overflow-hidden rounded-[26px] border border-background-50/15">
               <img
+              loading="lazy"
+              decoding="async"
                 src={data.coverImage}
                 alt={`${data.areaName} market report cover`}
                 title="Washington DC Market Report"

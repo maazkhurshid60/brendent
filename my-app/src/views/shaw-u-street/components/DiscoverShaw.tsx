@@ -9,6 +9,8 @@ export default function DiscoverShaw() {
         <Reveal>
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[26px] border border-background-200">
             <img
+              loading="lazy"
+              decoding="async"
               src={discoverCopy.image}
               alt="A leafy residential block in Shaw, Washington DC with historic rowhouses"
               title="Shaw / U Street Corridor neighborhood — Washington DC"

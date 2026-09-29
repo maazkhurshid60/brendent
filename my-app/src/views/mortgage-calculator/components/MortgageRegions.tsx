@@ -22,6 +22,8 @@ export default function MortgageRegions() {
             <div className="mt-9 overflow-hidden rounded-[26px] border border-background-300">
               <div className="h-[240px] w-full overflow-hidden md:h-[300px]">
                 <img
+              loading="lazy"
+              decoding="async"
                   src={mortgageHero.image}
                   alt="A DMV home at golden hour — where local property taxes shape your monthly payment"
                   title="State property tax regions — Mortgage Calculator"

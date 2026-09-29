@@ -6,6 +6,9 @@ export default function FallsChurchHero() {
   return (
     <section id="top" className="relative min-h-[94svh] w-full overflow-hidden bg-foreground-950">
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={fallsChurchHero.image}
         alt="The Falls Church, Virginia Broad Street downtown and tree-lined neighborhoods — the area guide market served by BW Metro Properties"
         title="Falls Church, VA Area Guide — BW Metro Properties"

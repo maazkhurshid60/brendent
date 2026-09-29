@@ -10,6 +10,8 @@ export default function WinSection() {
           <Reveal>
             <div className="h-[420px] w-full overflow-hidden rounded-[30px] md:h-[620px]">
               <img
+              loading="lazy"
+              decoding="async"
                 src={winTheRightHome.image}
                 alt="A resolute DMV front door representing a strong offer strategy"
                 title="Win the right home with BW Metro Properties"

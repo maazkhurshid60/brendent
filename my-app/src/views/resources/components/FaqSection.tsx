@@ -66,6 +66,8 @@ export default function FaqSection() {
             <div className="overflow-hidden rounded-[28px] border border-background-300 bg-foreground-950">
               <div className="relative h-[300px] w-full overflow-hidden bg-background-200">
                 <img
+              loading="lazy"
+              decoding="async"
                   src={faqCopy.profileImage}
                   alt="Brandon Wilson — BW Metro Properties"
                   title="Brandon Wilson — BW Metro Properties"

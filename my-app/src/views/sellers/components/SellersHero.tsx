@@ -10,6 +10,9 @@ export default function SellersHero() {
       className="relative flex min-h-[100svh] w-full flex-col overflow-hidden bg-foreground-950"
     >
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={sellHero.image}
         alt="A bright, modern kitchen in a recently listed DMV home"
         title="Sell your DMV home with BW Metro Properties"
@@ -42,6 +45,9 @@ export default function SellersHero() {
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <div className="flex flex-wrap items-center gap-x-5 gap-y-4">
             <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
               src={sellHero.equalHousing}
               alt="Equal Housing Opportunity"
               title="Equal Housing Opportunity"

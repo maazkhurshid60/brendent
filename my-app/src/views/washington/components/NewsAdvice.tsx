@@ -48,6 +48,8 @@ export default function NewsAdvice({ copy = newsCopy, posts = newsPosts }: NewsA
                 <a href={post.href} className="flex h-full flex-col" aria-label={post.title}>
                   <div className="relative h-[240px] w-full overflow-hidden md:h-[260px]">
                     <img
+              loading="lazy"
+              decoding="async"
                       src={post.image}
                       alt={post.title}
                       title={`${post.title} — Washington DC real estate advice`}

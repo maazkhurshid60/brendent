@@ -9,6 +9,9 @@ export default function GetInTouchHero() {
       className="relative flex min-h-[86svh] w-full items-center justify-center overflow-hidden bg-foreground-950"
     >
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={getInTouchHero.image}
         alt="Washington DC at dusk — get in touch with BW Metro Properties"
         title="Get in Touch — BW Metro Properties"

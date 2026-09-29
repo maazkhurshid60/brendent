@@ -171,9 +171,24 @@ body {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1), transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
-  will-change: opacity, transform;
 }
 
+/*
+ * No will-change here, deliberately.
+ *
+ * It began as `will-change: opacity, transform` on `.reveal` itself, which
+ * pinned a compositor layer per element for the whole visit - 75 of them on the
+ * home page, ~70 of which had finished animating and would never move again.
+ *
+ * Scoping the hint to an `.is-animating` class fixed the layers (76 -> 1) but
+ * cost more than it saved: it turned one class mutation per element into three,
+ * and style recalculation is the single largest cost on these pages. Measured,
+ * both ways, it was not worth it.
+ *
+ * Chrome promotes an element for the duration of an opacity/transform
+ * transition on its own. The hint only saves a first-frame promotion, which is
+ * not worth 150 extra style recalculations during a scroll.
+ */
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);

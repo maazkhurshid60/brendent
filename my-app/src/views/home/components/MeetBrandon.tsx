@@ -18,6 +18,8 @@ export default function MeetBrandon() {
             <div className="relative">
               <div className="h-[440px] w-full overflow-hidden rounded-[28px] md:h-[620px]">
                 <img
+              loading="lazy"
+              decoding="async"
                   src="https://assets.agentfire3.com/uploads/sites/2739/2026/04/IMG-6235.jpeg"
                   alt="Brandon Wilson, DMV realtor with BW Metro Properties"
                   className="h-full w-full object-cover object-top"

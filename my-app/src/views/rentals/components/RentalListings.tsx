@@ -69,6 +69,8 @@ export default function RentalListings() {
             >
               <div className="relative h-[240px] w-full overflow-hidden md:h-[270px]">
                 <img
+              loading="lazy"
+              decoding="async"
                   src={listing.image}
                   alt={`${listing.street}, ${listing.city} — rental available in the DMV`}
                   title={`${listing.street} ${listing.city} rental`}

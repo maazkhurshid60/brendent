@@ -161,6 +161,8 @@ export default function AreaListings({
               >
                 <div className="relative h-[280px] w-full overflow-hidden md:h-[320px]">
                   <img
+              loading="lazy"
+              decoding="async"
                     src={listing.image}
                     alt={`${listing.street}, ${listing.city} — available in ${areaName}`}
                     title={`${listing.street} ${listing.city} listing`}

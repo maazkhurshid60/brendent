@@ -6,6 +6,9 @@ export default function ArlingtonHero() {
   return (
     <section id="top" className="relative min-h-[94svh] w-full overflow-hidden bg-foreground-950">
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={arlingtonHero.image}
         alt="The Arlington, Virginia skyline and Potomac riverfront at dusk — the area guide market served by BW Metro Properties"
         title="Arlington, VA Area Guide — BW Metro Properties"

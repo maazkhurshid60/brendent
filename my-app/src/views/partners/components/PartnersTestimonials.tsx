@@ -84,6 +84,8 @@ export default function PartnersTestimonials({ sectionIndex = '05' }: { sectionI
               <figcaption className="mt-8 flex items-center gap-4 border-t border-background-50/15 pt-7">
                 <span className="h-12 w-12 shrink-0 overflow-hidden rounded-full">
                   <img
+              loading="lazy"
+              decoding="async"
                     src={review.avatar}
                     alt={`${review.name}, BW Metro Properties client`}
                     className="h-full w-full object-cover object-top"

@@ -6,6 +6,9 @@ export default function SaleHero() {
   return (
     <section id="top" className="relative min-h-[80svh] w-full overflow-hidden bg-foreground-950">
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={homeSaleHero.image}
         alt="A warm brick colonial home exterior at golden hour — estimating your net proceeds in the DMV"
         title="Home Sale Calculator — BW Metro Properties"

@@ -33,6 +33,8 @@ export default function ListingsV2() {
               <article className="group flex h-full flex-col overflow-hidden rounded-[26px] border border-background-200 bg-background-50 transition-colors duration-300 hover:border-foreground-300">
                 <div className="relative h-[300px] w-full overflow-hidden md:h-[340px]">
                   <img
+              loading="lazy"
+              decoding="async"
                     src={property.image}
                     alt={`${property.address}, ${property.city} — home for sale in the DMV`}
                     title={`${property.address} ${property.city} home for sale`}

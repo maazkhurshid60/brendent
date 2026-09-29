@@ -62,6 +62,8 @@ export default function Insights() {
               >
                 <div className="relative h-[230px] w-full overflow-hidden">
                   <img
+              loading="lazy"
+              decoding="async"
                     src={item.image}
                     alt={`${item.title} — BW Metro Properties insight`}
                     title={`${item.title} — BW Metro Properties`}

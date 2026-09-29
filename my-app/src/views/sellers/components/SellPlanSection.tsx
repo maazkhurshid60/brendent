@@ -23,6 +23,8 @@ export default function SellPlanSection() {
           <Reveal delay={120}>
             <div className="h-[440px] w-full overflow-hidden rounded-[30px] md:h-[640px]">
               <img
+              loading="lazy"
+              decoding="async"
                 src={positionHome.image}
                 alt="A beautifully staged DMV living room prepared for listing photos"
                 title="Staging and positioning your DMV home for sale"

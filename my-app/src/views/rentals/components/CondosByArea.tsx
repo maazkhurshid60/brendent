@@ -62,6 +62,8 @@ export default function CondosByArea() {
               className="group relative flex h-[420px] w-[280px] shrink-0 snap-start flex-col justify-end overflow-hidden rounded-[26px] sm:w-[320px]"
             >
               <img
+              loading="lazy"
+              decoding="async"
                 src={area.image}
                 alt={`Condos and rentals in ${area.name}`}
                 title={`Explore condos and rentals in ${area.name}`}

@@ -44,6 +44,8 @@ export default function SiteFooter({ linkBase = '' }: SiteFooterProps) {
           {/* Brand */}
           <div className="lg:col-span-5">
             <img
+              loading="lazy"
+              decoding="async"
               src={brand.logo}
               alt="BW Metro Properties logo"
               className="h-12 w-auto object-contain md:h-14"
@@ -136,6 +138,8 @@ export default function SiteFooter({ linkBase = '' }: SiteFooterProps) {
             <div className="mt-9">
               <p className={columnHeading}>Affiliated With</p>
               <img
+              loading="lazy"
+              decoding="async"
                 src={brand.psrLogo}
                 alt="Pearson Smith Realty logo"
                 className="mt-5 h-11 w-auto object-contain"

@@ -20,6 +20,9 @@ export default function PropertiesHero({ location, onLocationChange, onSearch }:
   return (
     <section id="top" className="relative flex min-h-[86svh] w-full flex-col justify-end overflow-hidden bg-foreground-950">
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={propertiesHero.image}
         alt="A tree-lined metropolitan neighborhood at golden hour, representing homes for sale across the DMV"
         title="Browse properties across the DMV"

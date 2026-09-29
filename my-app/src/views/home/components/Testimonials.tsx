@@ -32,6 +32,8 @@ export default function Testimonials() {
                 <figcaption className="mt-7 flex items-center gap-3.5 border-t border-background-50/10 pt-6">
                   <span className="h-12 w-12 shrink-0 overflow-hidden rounded-full">
                     <img
+              loading="lazy"
+              decoding="async"
                       src={review.avatar}
                       alt={`${review.name}, BW Metro Properties client`}
                       className="h-full w-full object-cover object-top"

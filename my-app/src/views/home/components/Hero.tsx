@@ -5,6 +5,9 @@ export default function Hero() {
     <section id="top" className="px-3 pt-3 md:px-5 md:pt-5">
       <div className="relative mx-auto flex min-h-[660px] w-full max-w-[1520px] flex-col justify-between overflow-hidden rounded-[24px] p-6 md:min-h-[860px] md:rounded-[36px] md:p-12">
         <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
           src="https://assets.agentfire3.com/uploads/sites/2739/2026/03/Alexandria-VA-Area-Guide.jpeg"
           alt="Washington DC metro area at golden hour with warm city lights"
           className="animate-ken-burns absolute inset-0 h-full w-full object-cover object-top"
@@ -28,6 +31,9 @@ export default function Hero() {
             <div className="flex items-start gap-5">
               <div className="h-24 w-24 shrink-0 overflow-hidden rounded-2xl md:h-28 md:w-28">
                 <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
                   src="https://assets.agentfire3.com/uploads/sites/2739/2026/03/Bethesda-Row-Area-Guide-AUTOx1150.fit.jpg"
                   alt="Bethesda Row neighborhood, a DMV community BW Metro Properties serves"
                   className="h-full w-full object-cover object-top"

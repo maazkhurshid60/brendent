@@ -6,6 +6,9 @@ export default function ArticleHero() {
   return (
     <section id="top" className="relative min-h-[92svh] w-full overflow-hidden bg-foreground-950">
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={articleMeta.heroImage}
         alt={articleMeta.heroAlt}
         title={`${articleMeta.title} — BW Metro Properties`}

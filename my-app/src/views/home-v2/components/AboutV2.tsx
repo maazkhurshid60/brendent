@@ -21,6 +21,8 @@ export default function AboutV2() {
             <div className="relative h-full">
               <div className="h-[460px] w-full overflow-hidden rounded-[30px] md:h-[680px]">
                 <img
+              loading="lazy"
+              decoding="async"
                   src="https://assets.agentfire3.com/uploads/sites/2739/2026/04/IMG-6235.jpeg"
                   alt="Brandon Wilson, DMV realtor with BW Metro Properties"
                   className="h-full w-full object-cover object-top"

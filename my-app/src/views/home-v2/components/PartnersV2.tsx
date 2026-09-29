@@ -27,6 +27,8 @@ export default function PartnersV2() {
                 className="group relative block h-[340px] overflow-hidden rounded-[26px] md:h-[400px]"
               >
                 <img
+              loading="lazy"
+              decoding="async"
                   src={partner.image}
                   alt={`${partner.name} — trusted BW Metro Properties partner in the DMV`}
                   className="h-full w-full object-cover object-top transition-transform duration-[900ms] group-hover:scale-105"

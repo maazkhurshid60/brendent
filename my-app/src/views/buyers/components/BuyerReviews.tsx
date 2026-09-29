@@ -21,6 +21,8 @@ export default function BuyerReviews() {
           <Reveal>
             <div className="h-[420px] w-full overflow-hidden rounded-[30px] md:h-[620px]">
               <img
+              loading="lazy"
+              decoding="async"
                 src={buyerReviewsImage}
                 alt="Brandon Wilson with a happy DMV buyer client"
                 title="BW Metro Properties client success stories"
@@ -56,6 +58,8 @@ export default function BuyerReviews() {
               <figcaption className="mt-7 flex items-center gap-3.5 border-t border-background-50/10 pt-6">
                 <span className="h-12 w-12 shrink-0 overflow-hidden rounded-full">
                   <img
+              loading="lazy"
+              decoding="async"
                     src={review.avatar}
                     alt={`${review.name}, BW Metro Properties buyer`}
                     className="h-full w-full object-cover object-top"

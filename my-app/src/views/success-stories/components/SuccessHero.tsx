@@ -6,6 +6,9 @@ export default function SuccessHero() {
   return (
     <section id="top" className="relative min-h-[88svh] w-full overflow-hidden bg-foreground-950">
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={successStoriesHero.image}
         alt="A happy BW Metro Properties client — the people behind the success stories"
         title="BW Metro Properties Success Stories"

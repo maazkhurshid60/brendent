@@ -18,6 +18,8 @@ export default function RelatedArticle() {
         >
           <div className="relative h-52 w-full shrink-0 overflow-hidden sm:h-auto sm:w-[230px]">
             <img
+              loading="lazy"
+              decoding="async"
               src={relatedArticle.image}
               alt={`${relatedArticle.title} — BW Metro Properties blog`}
               title={`${relatedArticle.title} — BW Metro Properties`}

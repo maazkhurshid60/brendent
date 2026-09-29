@@ -6,6 +6,9 @@ export default function MortgageHero() {
   return (
     <section id="top" className="relative min-h-[80svh] w-full overflow-hidden bg-foreground-950">
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={mortgageHero.image}
         alt="A warm brick colonial home exterior at golden hour — estimating your monthly mortgage payment in the DMV"
         title="Mortgage Calculator — BW Metro Properties"

@@ -6,6 +6,9 @@ export default function ShawUStreetHero() {
   return (
     <section id="top" className="relative min-h-[94svh] w-full overflow-hidden bg-foreground-950">
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={shawHero.image}
         alt="Historic rowhouses along the Shaw / U Street Corridor in Washington, DC — the area guide market served by BW Metro Properties"
         title="Shaw / U Street Corridor, Washington DC Area Guide — BW Metro Properties"

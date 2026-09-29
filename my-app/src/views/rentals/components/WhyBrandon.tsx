@@ -11,6 +11,8 @@ export default function WhyBrandon() {
             <div className="lg:sticky lg:top-28">
               <div className="relative h-[460px] w-full overflow-hidden rounded-[30px] bg-secondary-100 md:h-[600px]">
                 <img
+              loading="lazy"
+              decoding="async"
                   src={whyBrandon.image}
                   alt="Brandon Wilson, real estate advisor with BW Metro Properties"
                   title="Why work with Brandon Wilson for condos and rentals"

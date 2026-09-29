@@ -22,6 +22,8 @@ export default function SaleRegions() {
             <div className="mt-9 overflow-hidden rounded-[26px] border border-background-300">
               <div className="h-[240px] w-full overflow-hidden md:h-[300px]">
                 <img
+              loading="lazy"
+              decoding="async"
                   src={homeSaleHero.image}
                   alt="A DMV home at golden hour — where transfer taxes shape your net proceeds"
                   title="DMV transfer and recordation tax regions — Home Sale Calculator"

@@ -24,6 +24,8 @@ export default function SellerAdvantage() {
           <Reveal delay={120}>
             <div className="h-[420px] w-full overflow-hidden rounded-[30px] md:h-[600px]">
               <img
+              loading="lazy"
+              decoding="async"
                 src={stressFree.image}
                 alt="A calm, beautifully prepared DMV home ready for its next owner"
                 title="A stress-free home sale with BW Metro Properties"
@@ -38,6 +40,8 @@ export default function SellerAdvantage() {
           <Reveal className="order-2 lg:order-1">
             <div className="h-[420px] w-full overflow-hidden rounded-[30px] md:h-[600px]">
               <img
+              loading="lazy"
+              decoding="async"
                 src={localMarket.image}
                 alt="A DMV neighborhood illustrating local market knowledge"
                 title="Local market expertise across the DMV"

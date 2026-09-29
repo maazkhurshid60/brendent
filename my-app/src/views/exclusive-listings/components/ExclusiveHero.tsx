@@ -6,6 +6,9 @@ export default function ExclusiveHero() {
   return (
     <section id="top" className="relative min-h-[94svh] w-full overflow-hidden bg-foreground-950">
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={exclusiveHero.image}
         alt="An exclusive, off-market home represented by BW Metro Properties in the DMV"
         title="Exclusive listings across the DMV"

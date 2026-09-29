@@ -74,6 +74,8 @@ export default function Communities() {
                 className="group relative block h-[340px] w-full overflow-hidden rounded-[24px] md:h-[440px]"
               >
                 <img
+              loading="lazy"
+              decoding="async"
                   src={community.image}
                   alt={`${community.name} neighborhood guide — homes, photos and market trends`}
                   title={`${community.name} real estate and community guide`}

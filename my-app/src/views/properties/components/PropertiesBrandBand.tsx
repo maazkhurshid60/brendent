@@ -51,6 +51,8 @@ export default function PropertiesBrandBand() {
               <div className="mt-7 flex flex-col gap-5 border-t border-background-50/12 pt-6 sm:flex-row sm:items-center sm:justify-between">
                 <div className="inline-flex items-center justify-center">
                   <img
+              loading="lazy"
+              decoding="async"
                     src={brand.psrLogo}
                     alt="Pearson Smith Realty logo"
                     className="h-9 w-auto object-contain"

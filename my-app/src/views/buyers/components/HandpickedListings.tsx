@@ -65,6 +65,8 @@ export default function HandpickedListings() {
             >
               <div className="relative h-[260px] w-full overflow-hidden md:h-[300px]">
                 <img
+              loading="lazy"
+              decoding="async"
                   src={listing.image}
                   alt={`${listing.street}, ${listing.city} — home for sale in the DMV`}
                   title={`${listing.street} ${listing.city} home for sale`}

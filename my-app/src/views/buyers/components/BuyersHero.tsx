@@ -7,6 +7,9 @@ export default function BuyersHero() {
   return (
     <section id="top" className="relative min-h-[92svh] w-full overflow-hidden bg-foreground-950">
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={buyersHero.image}
         alt="A contemporary home in the DMV region represented by BW Metro Properties"
         title="Homes for buyers across the DMV"

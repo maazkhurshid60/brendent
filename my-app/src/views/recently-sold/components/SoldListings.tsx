@@ -18,6 +18,8 @@ function SoldCard({ listing }: { listing: SoldListing }) {
     <article className="sold-card group flex h-full flex-col overflow-hidden rounded-[26px] border border-background-200 bg-background-50">
       <div className="relative h-[280px] w-full overflow-hidden md:h-[320px]">
         <img
+              loading="lazy"
+              decoding="async"
           src={listing.image}
           alt={`Sold: ${listing.address}, ${location}`}
           title={`${listing.address} ${location} recently sold`}

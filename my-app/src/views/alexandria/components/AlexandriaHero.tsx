@@ -6,6 +6,9 @@ export default function AlexandriaHero() {
   return (
     <section id="top" className="relative min-h-[94svh] w-full overflow-hidden bg-foreground-950">
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={alexandriaHero.image}
         alt="The Alexandria, Virginia waterfront and historic Old Town streetscape at dusk — the area guide market served by BW Metro Properties"
         title="Alexandria, VA Area Guide — BW Metro Properties"

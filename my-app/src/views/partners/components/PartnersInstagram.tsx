@@ -44,6 +44,8 @@ export default function PartnersInstagram({ sectionIndex = '06' }: { sectionInde
                 className="group relative block aspect-square w-full overflow-hidden rounded-2xl"
               >
                 <img
+              loading="lazy"
+              decoding="async"
                   src={post.image}
                   alt={post.alt}
                   className="h-full w-full object-cover object-top transition-transform duration-[900ms] group-hover:scale-110"

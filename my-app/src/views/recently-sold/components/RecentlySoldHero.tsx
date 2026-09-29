@@ -6,6 +6,9 @@ export default function RecentlySoldHero() {
   return (
     <section id="top" className="relative min-h-[88svh] w-full overflow-hidden bg-foreground-950">
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={recentlySoldHero.image}
         alt="Recently sold home interior in the Washington DC metro area"
         className="v2-kenburns absolute inset-0 h-full w-full object-cover object-top"

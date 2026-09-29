@@ -16,6 +16,8 @@ function PostCard({ post }: { post: BlogPost }) {
     <>
       <div className="relative h-[210px] w-full overflow-hidden md:h-[230px]">
         <img
+              loading="lazy"
+              decoding="async"
           src={post.image}
           alt={`${post.title} — BW Metro Properties blog`}
           title={`${post.title} — BW Metro Properties`}

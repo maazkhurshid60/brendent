@@ -9,6 +9,9 @@ export default function ResourcesHero() {
       className="relative flex min-h-[90svh] w-full items-center justify-center overflow-hidden bg-foreground-950"
     >
       <img
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
         src={resourcesHero.image}
         alt="The Washington DC region at dusk — the market BW Metro Properties serves"
         title="Resources &amp; Partners — BW Metro Properties"

@@ -38,6 +38,8 @@ export default function PartnersIntro({ sectionIndex = '01' }: { sectionIndex?: 
             <div className="relative">
               <div className="relative h-[460px] w-full overflow-hidden rounded-[30px] bg-background-100 md:h-[620px]">
                 <img
+              loading="lazy"
+              decoding="async"
                   src={partnersIntro.image}
                   alt="Brandon Wilson, the realtor behind the BW Metro Properties partner network"
                   title="Brandon Wilson — BW Metro Properties Partners"
