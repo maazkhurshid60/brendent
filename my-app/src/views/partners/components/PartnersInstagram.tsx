@@ -4,12 +4,16 @@ import { brand, instagramPosts } from '@/mocks/homeData';
 import { partnersInstagramCopy } from '@/mocks/partnersData';
 import { Eyebrow } from '@/views/home-v2/components/shared';
 
-export default function PartnersInstagram() {
+/**
+ * `sectionIndex` lets the combined Resources page renumber this section. On the
+ * standalone Partners page it keeps its own number, so nothing changes there.
+ */
+export default function PartnersInstagram({ sectionIndex = '06' }: { sectionIndex?: string }) {
   return (
     <section id="instagram" className="bg-background-100 px-5 py-24 md:px-10 md:py-28">
       <div className="mx-auto max-w-[1280px]">
         <Reveal className="flex flex-col items-center text-center">
-          <Eyebrow index="06" className="justify-center">
+          <Eyebrow index={sectionIndex} className="justify-center">
             {partnersInstagramCopy.eyebrow}
           </Eyebrow>
           <h2 className="mt-6 font-heading text-[34px] font-normal leading-tight tracking-[-0.025em] text-foreground-950 md:text-[52px]">

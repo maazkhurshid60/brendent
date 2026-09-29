@@ -3,12 +3,16 @@ import { communityBusinesses, communityCopy } from '@/mocks/partnersData';
 import { Eyebrow } from '@/views/home-v2/components/shared';
 import PartnerCard from '@/views/partners/components/PartnerCard';
 
-export default function CommunityBusinesses() {
+/**
+ * `sectionIndex` lets the combined Resources page renumber this section. On the
+ * standalone Partners page it keeps its own number, so nothing changes there.
+ */
+export default function CommunityBusinesses({ sectionIndex = '03' }: { sectionIndex?: string }) {
   return (
     <section id="local-favorites" className="bg-background-50 px-5 py-24 md:px-10 md:py-28">
       <div className="mx-auto max-w-[1280px]">
         <Reveal className="max-w-2xl">
-          <Eyebrow index="03">{communityCopy.eyebrow}</Eyebrow>
+          <Eyebrow index={sectionIndex}>{communityCopy.eyebrow}</Eyebrow>
           <h2 className="mt-6 font-heading text-[34px] font-normal leading-[1.04] tracking-[-0.025em] text-foreground-950 md:text-[50px]">
             Trusted Community <em className="italic">Businesses</em>
           </h2>

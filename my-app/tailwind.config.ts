@@ -57,6 +57,15 @@ const config: Config = {
           900: 'oklch(var(--accent-900) / <alpha-value>)',
           950: 'oklch(var(--accent-950) / <alpha-value>)',
         },
+        chart: {
+          1: 'oklch(var(--chart-1) / <alpha-value>)',
+          2: 'oklch(var(--chart-2) / <alpha-value>)',
+        },
+        state: {
+          ok: 'oklch(var(--state-ok) / <alpha-value>)',
+          warn: 'oklch(var(--state-warn) / <alpha-value>)',
+          off: 'oklch(var(--state-off) / <alpha-value>)',
+        },
         secondary: {
           50: 'oklch(var(--secondary-50) / <alpha-value>)',
           100: 'oklch(var(--secondary-100) / <alpha-value>)',

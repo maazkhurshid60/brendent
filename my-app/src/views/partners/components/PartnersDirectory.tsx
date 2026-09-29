@@ -6,7 +6,11 @@ import { directoryCopy, directoryEntries } from '@/mocks/partnersData';
 import { CtaButton, Eyebrow } from '@/views/home-v2/components/shared';
 import DirectoryCard from '@/views/partners/components/DirectoryCard';
 
-export default function PartnersDirectory() {
+/**
+ * `sectionIndex` lets the combined Resources page renumber this section. On the
+ * standalone Partners page it keeps its own number, so nothing changes there.
+ */
+export default function PartnersDirectory({ sectionIndex = '04' }: { sectionIndex?: string }) {
   const categories = useMemo(() => {
     const unique: string[] = [];
     directoryEntries.forEach((entry) => {
@@ -23,7 +27,7 @@ export default function PartnersDirectory() {
     <section id="directory" className="bg-background-100 px-5 py-24 md:px-10 md:py-32">
       <div className="mx-auto max-w-[1280px]">
         <Reveal className="max-w-3xl">
-          <Eyebrow index="04">{directoryCopy.eyebrow}</Eyebrow>
+          <Eyebrow index={sectionIndex}>{directoryCopy.eyebrow}</Eyebrow>
           <h2 className="mt-6 font-heading text-[36px] font-normal leading-[1.03] tracking-[-0.025em] text-foreground-950 md:text-[54px]">
             The Full Partner <em className="italic">Directory</em>
           </h2>

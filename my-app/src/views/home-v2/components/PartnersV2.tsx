@@ -23,7 +23,7 @@ export default function PartnersV2() {
           {partners.map((partner, index) => (
             <Reveal key={partner.name} delay={index * 80}>
               <Link
-                href="/partners"
+                href="/resources#network"
                 className="group relative block h-[340px] overflow-hidden rounded-[26px] md:h-[400px]"
               >
                 <img

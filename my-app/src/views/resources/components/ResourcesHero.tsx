@@ -11,7 +11,7 @@ export default function ResourcesHero() {
       <img
         src={resourcesHero.image}
         alt="The Washington DC region at dusk — the market BW Metro Properties serves"
-        title="Resources — BW Metro Properties"
+        title="Resources &amp; Partners — BW Metro Properties"
         className="v2-kenburns absolute inset-0 h-full w-full object-cover object-top"
       />
       <div className="v2-scrim absolute inset-0" aria-hidden="true" />
@@ -19,7 +19,7 @@ export default function ResourcesHero() {
 
       <div className="pointer-events-none absolute right-7 top-1/2 hidden -translate-y-1/2 xl:block">
         <span className="v2-vertical text-[10px] font-semibold uppercase tracking-[0.42em] text-background-200/60">
-          Resources — Guides · Checklists · Insights
+          Resources &amp; Partners — Guides · Checklists · Trusted Pros
         </span>
       </div>
       <div className="pointer-events-none absolute left-7 top-1/2 hidden -translate-y-1/2 xl:block">

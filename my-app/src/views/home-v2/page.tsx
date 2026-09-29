@@ -1,13 +1,12 @@
 'use client';
 
-import { useState } from 'react';
 import { useReveal } from '@/hooks/useReveal';
 import NavbarV2 from '@/views/home-v2/components/NavbarV2';
 import HeroV2 from '@/views/home-v2/components/HeroV2';
-import CinematicModal from '@/views/home-v2/components/CinematicModal';
 import AboutV2 from '@/views/home-v2/components/AboutV2';
 import WhyV2 from '@/views/home-v2/components/WhyV2';
 import ServicesV2 from '@/views/home-v2/components/ServicesV2';
+import IntroFilmV2 from '@/views/home-v2/components/IntroFilmV2';
 import ListingsV2 from '@/views/home-v2/components/ListingsV2';
 import ValuationV2 from '@/views/home-v2/components/ValuationV2';
 import CommunitiesV2 from '@/views/home-v2/components/CommunitiesV2';
@@ -23,14 +22,14 @@ import FooterV2 from '@/views/home-v2/components/FooterV2';
 
 export default function HomeV2() {
   useReveal();
-  const [filmOpen, setFilmOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-background-100">
       <NavbarV2 />
       <main>
-        <HeroV2 onWatchFilm={() => setFilmOpen(true)} />
+        <HeroV2 />
         <ServicesV2 />
+        <IntroFilmV2 />
         <AboutV2 />
         <WhyV2 />
         <ListingsV2 />
@@ -46,7 +45,6 @@ export default function HomeV2() {
         <CtaV2 />
       </main>
       <FooterV2 />
-      <CinematicModal open={filmOpen} onClose={() => setFilmOpen(false)} />
     </div>
   );
 }

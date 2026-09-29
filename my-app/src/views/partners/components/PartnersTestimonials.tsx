@@ -7,7 +7,11 @@ import { successReviews } from '@/mocks/successStoriesData';
 import { partnersTestimonialCopy } from '@/mocks/partnersData';
 import { Eyebrow } from '@/views/home-v2/components/shared';
 
-export default function PartnersTestimonials() {
+/**
+ * `sectionIndex` lets the combined Resources page renumber this section. On the
+ * standalone Partners page it keeps its own number, so nothing changes there.
+ */
+export default function PartnersTestimonials({ sectionIndex = '05' }: { sectionIndex?: string }) {
   const [index, setIndex] = useState(0);
   const total = successReviews.length;
   const review = successReviews[index];
@@ -27,7 +31,7 @@ export default function PartnersTestimonials() {
 
         <div className="relative grid grid-cols-1 items-center gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
           <Reveal className="flex flex-col">
-            <Eyebrow tone="light" index="05">
+            <Eyebrow tone="light" index={sectionIndex}>
               {partnersTestimonialCopy.eyebrow}
             </Eyebrow>
             <h2 className="mt-7 font-heading text-[36px] font-normal leading-[1.03] tracking-[-0.025em] text-background-50 md:text-[54px]">

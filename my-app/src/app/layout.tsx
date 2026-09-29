@@ -1,8 +1,10 @@
 import type { Metadata, Viewport } from 'next';
 import type { ReactNode } from 'react';
+import Script from 'next/script';
 import '@/index.css';
 
 const SITE = 'https://bwmetroproperties.com';
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 const TITLE = 'BW Metro Properties | Brandon Wilson, DMV Realtor';
 
 export const metadata: Metadata = {
@@ -107,6 +109,24 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         {children}
+        {/* Google Analytics. Rendered only when the measurement ID is present,
+            so a local or preview build collects nothing and no empty gtag stub
+            ships to visitors. `afterInteractive` keeps it off the critical
+            path - analytics must never delay the hero.
+
+            Nothing is recorded retrospectively: the numbers on /dashboard
+            start from the moment this ID is first set in the environment. */}
+        {GA_ID ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4-init" strategy="afterInteractive">
+              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`}
+            </Script>
+          </>
+        ) : null}
       </body>
     </html>
   );

@@ -156,168 +156,24 @@ export const directoryCopy = {
   ctaHref: '/get-in-touch',
 };
 
-export const directoryEntries: DirectoryEntry[] = [
-  {
-    category: 'Real Estate Attorney',
-    name: 'Karla Heine Goodale, Partner',
-    contacts: [
-      { type: 'address', label: 'Lieberman Law Office P.C.', href: 'https://maps.google.com/?q=Lieberman+Law+Office+P.C.' },
-      { type: 'phone', label: '617-285-6303', href: 'tel:6172856303' },
-      { type: 'email', label: 'kgoodale@gbllaw.com', href: 'mailto:kgoodale@gbllaw.com' },
-    ],
-  },
-  {
-    category: 'Tiger Home Inspection',
-    name: 'Karla Heine Goodale, Partner',
-    contacts: [{ type: 'phone', label: '800-628-4437', href: 'tel:8006284437' }],
-  },
-  {
-    category: 'Home Inspector',
-    name: 'Imperial Inspection Services Inc.',
-    contacts: [{ type: 'phone', label: '800-628-4437', href: 'tel:8006284437' }],
-  },
-  {
-    category: 'Septic Inspectors',
-    name: 'Wadsworth Inspections',
-    contacts: [
-      { type: 'address', label: 'Rob Wadsworth', href: 'https://maps.google.com/?q=Wadsworth+Inspections' },
-      { type: 'phone', label: '508-404-7891', href: 'tel:5084047891' },
-      { type: 'email', label: 'rob@wadsworthinspections.com', href: 'mailto:rob@wadsworthinspections.com' },
-    ],
-  },
-  {
-    category: 'Insurance',
-    name: 'Ironside Insurance',
-    contacts: [
-      { type: 'address', label: 'Anthony Cingranelli', href: 'https://maps.google.com/?q=Ironside+Insurance' },
-      { type: 'phone', label: '617-777-4967', href: 'tel:6177774967' },
-      { type: 'email', label: 'anthony@ironsideig.com', href: 'mailto:anthony@ironsideig.com' },
-    ],
-  },
-  {
-    category: 'Moving',
-    name: 'New Generation Moving & Storage',
-    contacts: [{ type: 'phone', label: '774-215-5099', href: 'tel:7742155099' }],
-  },
-  {
-    category: 'Moving',
-    name: 'Statewide Moving',
-    contacts: [{ type: 'phone', label: '774-296-8515', href: 'tel:7742968515' }],
-  },
-  {
-    category: 'Contractors',
-    name: 'Lagerval Construction',
-    contacts: [{ type: 'phone', label: '508-269-3144', href: 'tel:5082693144' }],
-  },
-  {
-    category: 'Contractors',
-    name: 'Cycle Carpentry',
-    contacts: [{ type: 'phone', label: '781-308-0377', href: 'tel:7813080377' }],
-  },
-  {
-    category: 'Roofer',
-    name: 'Joe McEachern',
-    contacts: [{ type: 'phone', label: '774-766-0792', href: 'tel:7747660792' }],
-  },
-  {
-    category: 'Roofer',
-    name: 'Lagerval Construction',
-    contacts: [{ type: 'phone', label: '508-269-3144', href: 'tel:5082693144' }],
-  },
-  {
-    category: 'Electrician',
-    name: 'Do It All Electrical',
-    contacts: [{ type: 'phone', label: '781-447-8121', href: 'tel:7814478121' }],
-  },
-  {
-    category: 'Electrician',
-    name: 'CRB Electrical',
-    contacts: [{ type: 'phone', label: '508-378-7701', href: 'tel:5083787701' }],
-  },
-  {
-    category: 'Electrician',
-    name: 'Dan Driscoll',
-    contacts: [{ type: 'phone', label: '617-212-2136', href: 'tel:6172122136' }],
-  },
-  {
-    category: 'Plumber',
-    name: 'Fleming Plumbing & Heating',
-    contacts: [{ type: 'phone', label: '774-259-7936', href: 'tel:7742597936' }],
-  },
-  {
-    category: 'Plumber',
-    name: 'C.J. Plumbing & Heating',
-    contacts: [{ type: 'phone', label: '508-378-1271', href: 'tel:5083781271' }],
-  },
-  {
-    category: 'Plumber',
-    name: 'LaCourse Plumbing',
-    contacts: [{ type: 'phone', label: '857-891-2383', href: 'tel:8578912383' }],
-  },
-  {
-    category: 'HVAC',
-    name: 'Mc Claren Heating & Air',
-    contacts: [{ type: 'phone', label: '781-355-1949', href: 'tel:7813551949' }],
-  },
-  {
-    category: 'HVAC',
-    name: 'Northern Comfort Heating & AC Contractors',
-    contacts: [{ type: 'phone', label: '508-697-7583', href: 'tel:5086977583' }],
-  },
-  {
-    category: 'HVAC',
-    name: 'Mann Mechanical HVAC',
-    contacts: [{ type: 'phone', label: '508-400-7769', href: 'tel:5084007769' }],
-  },
-  {
-    category: 'Landscaper',
-    name: 'Rose & Stone Landscape and Design',
-    contacts: [{ type: 'phone', label: '781-733-4911', href: 'tel:7817334911' }],
-  },
-  {
-    category: 'Landscaper',
-    name: 'Whitmore’s Yard Care Inc.',
-    contacts: [{ type: 'phone', label: '508-378-2628', href: 'tel:5083782628' }],
-  },
-  {
-    category: 'Landscaper',
-    name: 'CF Landscaping',
-    contacts: [{ type: 'phone', label: '774-719-3932', href: 'tel:7747193932' }],
-  },
-  {
-    category: 'House Cleaning',
-    name: 'W&G Best Cleaning Inc.',
-    contacts: [{ type: 'phone', label: '508-933-7635', href: 'tel:5089337635' }],
-  },
-  {
-    category: 'Painter',
-    name: 'Stop N’ Stare Painting',
-    contacts: [{ type: 'phone', label: '508-208-1814', href: 'tel:5082081814' }],
-  },
-  {
-    category: 'Junk Removal',
-    name: 'Blackbeard Inc.',
-    contacts: [
-      { type: 'phone', label: '781-831-2376', href: 'tel:7818312376' },
-      { type: 'email', label: 'blackbeardsealcoating@gmail.com', href: 'mailto:blackbeardsealcoating@gmail.com' },
-    ],
-  },
-  {
-    category: 'Sealcoating',
-    name: 'Godek & Sons Sealcoating',
-    contacts: [{ type: 'phone', label: '508-840-0082', href: 'tel:5088400082' }],
-  },
-  {
-    category: 'Excavator',
-    name: 'Vinny Mofford Excavation LLC',
-    contacts: [{ type: 'phone', label: '508-654-7917', href: 'tel:5086547917' }],
-  },
-  {
-    category: 'Snow Plowing',
-    name: 'Godek & Sons Sealcoating',
-    contacts: [{ type: 'phone', label: '508-840-0082', href: 'tel:5088400082' }],
-  },
-];
+/**
+ * The directory is DERIVED from the partner lists above rather than being its
+ * own list.
+ *
+ * What was here before was a 39-entry list carried over from a template: the
+ * numbers were Massachusetts area codes (617, 508, 774) on a DC/Maryland/
+ * Virginia brokerage, one person appeared twice under two different trades,
+ * and two unrelated firms shared a phone number. Publishing contact details
+ * that wrong for named, real businesses is worse than publishing none, so the
+ * directory now draws on the partners Brandon actually works with. The old
+ * list is in git history if any of it turns out to be genuine.
+ *
+ * Deriving it also means the directory can never drift out of step with the
+ * cards above it - there is one list, shown two ways.
+ */
+export const directoryEntries: DirectoryEntry[] = [...featuredPartners, ...communityBusinesses].map(
+  ({ category, name, contacts }) => ({ category, name, contacts }),
+);
 
 export const partnersTestimonialCopy = {
   eyebrow: 'What Clients Are Saying',

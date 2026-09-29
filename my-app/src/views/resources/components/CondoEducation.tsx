@@ -14,7 +14,7 @@ const iconMap: Record<string, LucideIcon> = {
 
 export default function CondoEducation() {
   return (
-    <section className="bg-background-50 px-5 py-20 md:px-10 md:py-28">
+    <section id="condo-basics" className="bg-background-50 px-5 py-20 md:px-10 md:py-28">
       <div className="mx-auto max-w-[1280px]">
         <Reveal className="max-w-3xl">
           <Eyebrow index="03">{condoCopy.eyebrow}</Eyebrow>

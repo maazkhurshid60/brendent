@@ -67,6 +67,23 @@
   --secondary-900: 0.165 0.01 62;
   --secondary-950: 0.13 0.009 62;
 
+  /* Chart series colours (the dashboard only; nothing on the public site
+     uses these). The brand's own ramps cannot carry two series: coral vs gold
+     measures deltaE 3.8 under deuteranopia and 13.5 even with normal vision,
+     against a floor of 15, because gold is the site's only other chromatic
+     ramp and it sits below the chroma floor - it reads as gray. So series 2 is
+     a chart-only blue, chosen by running the pair through the palette
+     validator until all six checks passed: deltaE 20.7 protan, 31.3 normal,
+     both above 3:1 on the panel surface. Do not swap it for an on-brand hue
+     without re-running that check. */
+  --chart-1: 0.65 0.163 35;    /* coral  #e06345 - same as --primary-500 */
+  --chart-2: 0.55 0.15 252;    /* blue   #1c73c5 */
+
+  /* State colours. Always shipped with an icon and a word, never colour alone. */
+  --state-ok: 0.55 0.13 150;
+  --state-warn: 0.62 0.13 75;
+  --state-off: 0.55 0.18 28;
+
   --font-heading: 'Fraunces', Georgia, 'Times New Roman', serif;
   --font-body: 'Onest', system-ui, -apple-system, sans-serif;
   --font-label: 'Onest', system-ui, -apple-system, sans-serif;
@@ -699,9 +716,58 @@ button.rounded-full:active {
 /* Right-side slide-in drawer                     */
 /* --------------------------------------------- */
 
+/* ---------------------------------------------------------------- */
+/* Brandon's intro film in fullscreen                                */
+/* ---------------------------------------------------------------- */
+
+/*
+ * The film is 1080x1920 - portrait. In the page it is framed 9:16 and
+ * object-cover is correct there, because the box matches the source and
+ * nothing is lost.
+ *
+ * Fullscreen is a different shape. The video element becomes the whole screen,
+ * which on a laptop is 16:9, and object-cover keeps doing what it is told: it
+ * fills that box and throws away the overflow. Covering 1920x1080 with a
+ * 1080x1920 source scales it to 1920x3413, so only 32% of the frame survives -
+ * a centre band, with Brandon's head cropped off above the jacket.
+ *
+ * So fullscreen switches to contain. The whole frame is shown, with the screen
+ * black either side of it, which is the right way round: a portrait film on a
+ * landscape screen is pillarboxed, not cropped.
+ */
+/*
+ * Written as two separate rules on purpose. A selector list is thrown away
+ * WHOLE if the browser does not understand any one selector in it, so pairing
+ * the standard :fullscreen with the -webkit- form would mean neither applies in
+ * a browser that knows only one of them - which is every browser this is here
+ * for.
+ */
+.intro-film:fullscreen {
+  aspect-ratio: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+}
+
+.intro-film:-webkit-full-screen {
+  aspect-ratio: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+}
+
 /* Anchors scroll clear of the fixed top bar when a drawer link is used */
 section[id] {
   scroll-margin-top: 96px;
+}
+
+/* The combined Resources + Partners page stacks a sticky jump bar under that
+   fixed header, so its anchors have to clear both or every jump lands with the
+   section heading hidden behind the two bars. */
+.resources-combined section[id] {
+  scroll-margin-top: 152px;
 }
 
 @keyframes bw-drawer-in {

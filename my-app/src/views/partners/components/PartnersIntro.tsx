@@ -1,15 +1,19 @@
 import { ArrowRight } from 'lucide-react';
 import Reveal from '@/components/base/Reveal';
-import { partnersIntro } from '@/mocks/partnersData';
+import { directoryEntries, partnersIntro } from '@/mocks/partnersData';
 import { CtaButton, Eyebrow, GhostButton } from '@/views/home-v2/components/shared';
 
-export default function PartnersIntro() {
+/**
+ * `sectionIndex` lets the combined Resources page renumber this section. On the
+ * standalone Partners page it keeps its own number, so nothing changes there.
+ */
+export default function PartnersIntro({ sectionIndex = '01' }: { sectionIndex?: string }) {
   return (
     <section id="network" className="bg-background-50 px-5 py-24 md:px-10 md:py-32">
       <div className="mx-auto max-w-[1280px]">
         <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20">
           <Reveal className="flex flex-col">
-            <Eyebrow index="01">{partnersIntro.eyebrow}</Eyebrow>
+            <Eyebrow index={sectionIndex}>{partnersIntro.eyebrow}</Eyebrow>
             <h2 className="mt-7 font-heading text-[38px] font-normal leading-[1.02] tracking-[-0.025em] text-foreground-950 md:text-[58px]">
               My Go-To <em className="italic">Partners</em>
             </h2>
@@ -43,7 +47,12 @@ export default function PartnersIntro() {
               </div>
 
               <div className="absolute bottom-5 left-5 right-5 flex items-center gap-4 rounded-2xl border border-background-50/20 bg-foreground-950/65 px-5 py-4 backdrop-blur-md">
-                <span className="font-heading text-[30px] leading-none text-background-50">14+</span>
+                {/* Counted from the directory, not typed in. It read "14+" against a
+                    list of 8, because the number was written once and the list
+                    changed underneath it. */}
+                <span className="font-heading text-[30px] leading-none text-background-50">
+                  {directoryEntries.length}
+                </span>
                 <span className="text-[11.5px] leading-snug text-background-100">
                   Vetted professionals across lending, inspection, title, trades and insurance.
                 </span>

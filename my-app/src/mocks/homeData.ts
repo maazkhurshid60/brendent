@@ -326,8 +326,7 @@ export const footerColumns = [
     links: [
       { label: 'Explore Areas', href: '/explore-areas' },
       { label: 'Communities We Serve', href: '#communities' },
-      { label: 'Partners', href: '/partners' },
-      { label: 'Resources', href: '/resources' },
+      { label: 'Resources & Partners', href: '/resources' },
       { label: 'Success Stories', href: '/success-stories' },
       { label: 'Get in Touch', href: '/get-in-touch' },
     ],
@@ -374,8 +373,7 @@ export const menuGroups = [
       { label: 'Blog', href: '/blog' },
       { label: 'Success Stories', href: '/success-stories' },
       { label: 'Get in Touch', href: '/get-in-touch' },
-      { label: 'Partners', href: '/partners' },
-      { label: 'Resources', href: '/resources' },
+      { label: 'Resources & Partners', href: '/resources' },
     ],
   },
   {

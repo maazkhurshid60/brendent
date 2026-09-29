@@ -13,7 +13,7 @@ const iconMap: Record<string, LucideIcon> = {
 
 export default function GuidesChecklists() {
   return (
-    <section className="relative overflow-hidden bg-foreground-950 px-5 py-20 md:px-10 md:py-28">
+    <section id="guides" className="relative overflow-hidden bg-foreground-950 px-5 py-20 md:px-10 md:py-28">
       <div className="v2-grain absolute inset-0" aria-hidden="true" />
       <div className="relative mx-auto max-w-[1280px]">
         <Reveal className="max-w-2xl">
